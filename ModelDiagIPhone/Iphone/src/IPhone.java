@@ -4,7 +4,14 @@ import interfaces.ReprodutorMusical;
 
 public class IPhone implements AparelhoTelefonico,NavegadorInternet,ReprodutorMusical{
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        IPhone telefone = new IPhone();
+       
+        telefone.tocar();
+        telefone.pausar();
+        telefone.selecionarMusica();
+        telefone.adicionarNovaAba();
+        telefone.exibirPagina();
+
     }
 
     public void tocar() {
